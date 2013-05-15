@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project
+
+    name="GLOS"
+
+    default="real" >
+
+    <property file="local.properties" />
+
+    <property
+        name="out.absolute.dir"
+        location="bin" />
+
+    <property
+        name="gen.absolute.dir"
+        location="gen" />
+
+    <target
+        name="real"
+        description=" " >
+
+        <delete
+            dir="${out.absolute.dir}"
+            verbose="false" />
+
+        <delete
+            dir="${gen.absolute.dir}"
+            verbose="false" />
+
+        <ant
+            antfile="build.xml"
+            target="release" />
+
+        <copy
+            file="${out.absolute.dir}/${ant.project.name}-release.apk"
+            overwrite="true"
+            tofile="${out.absolute.dir}/${file_name}_${build_date}.apk" />
+    </target>
+
+</project>

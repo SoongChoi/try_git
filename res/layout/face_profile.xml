@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@drawable/bg_popup_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:background="@drawable/bg_popup_body"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:text="닫기" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120px" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginLeft="50px"
+                android:scaleType="fitCenter" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/text02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text01"
+                    android:layout_marginTop="20px"
+                    android:layout_marginRight="20px"
+                    android:textColor="#333333"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/text03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text02"
+                    android:layout_marginTop="20px"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="18px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@drawable/bg_popup_bottom" />
+
+</LinearLayout>

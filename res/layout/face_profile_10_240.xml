@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13.3dp"
+        android:background="@drawable/bg_popup_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="233.3dp"
+        android:background="@drawable/bg_popup_body"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginTop="13.3dp"
+            android:text="닫기" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80.0dp" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100.0dp"
+                android:layout_height="100.0dp"
+                android:layout_marginLeft="33.3dp"
+                android:scaleType="fitCenter" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.3dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/text02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text01"
+                    android:layout_marginTop="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:textColor="#333333"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/text03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text02"
+                    android:layout_marginTop="13.3dp"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13.3dp"
+        android:background="@drawable/bg_popup_bottom" />
+
+</LinearLayout>

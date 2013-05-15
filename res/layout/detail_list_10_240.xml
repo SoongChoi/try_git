@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ktmap.android.map.KMap
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            appID="8100D785"
+            userKey="T77FC968725A394" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.7dp"
+        android:layout_marginBottom="6.7dp"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="133.3dp"
+            android:layout_height="133.3dp"
+            android:layout_marginLeft="13.3dp"
+            android:background="#121212"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.3dp"
+            android:layout_toRightOf="@+id/img" >
+
+            <TextView
+                android:id="@+id/text01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="aaaaaa"
+                android:textColor="#333333"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/text02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text01"
+                android:layout_marginTop="13.3dp"
+                android:singleLine="true"
+                android:text="tel:"
+                android:textColor="#333333"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/text03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text02"
+                android:layout_marginLeft="6.7dp"
+                android:layout_toRightOf="@+id/text02"
+                android:singleLine="true"
+                android:text="02-888-2222"
+                android:textColor="#333333"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/text04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text02"
+                android:layout_marginTop="13.3dp"
+                android:singleLine="true"
+                android:text="aaaaaa"
+                android:textColor="#333333"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

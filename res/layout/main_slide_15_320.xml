@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/menuLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:background="#3f3f3f"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7.5dp"
+            android:text="1. MainList"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/profileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#3f3f3f"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7.5dp"
+            android:text="2. Profile"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#3f3f3f"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7.5dp"
+            android:text="3. 설정"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#3f3f3f"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7.5dp"
+            android:text="4. 기타"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:layout_weight="0"
+            android:background="#70ff00" >
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="로컬서비스"
+                android:textColor="#ffffff"
+                android:textSize="28.5sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="24.0dp"
+                android:layout_height="24.0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11.3dp"
+                android:background="@drawable/test_menu"
+                android:text="" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="30.0dp"
+                android:layout_height="30.0dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11.3dp"
+                android:background="@drawable/test_btn_search_normal"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
